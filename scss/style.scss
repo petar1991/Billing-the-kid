@@ -1,0 +1,61 @@
+@import 'var';
+@import 'mixin';
+
+@include main;
+
+main {
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../slike/intro.jpg');
+
+    header {
+        width: 100%;
+        height: 5em;
+        color: #fff;
+
+        nav, .meni {
+            padding: 1em 2em;
+        }
+
+        .meni {  
+            height: 100%;
+            width: 7%;
+            float: right;
+            background: $red;
+            
+        img {
+            height: 100%;
+			margin: 0 auto;
+        }
+      }
+      
+      nav {
+          text-align: right;
+          float: left;
+          height: 100%;
+          width: 93%;
+          background-color: $hfColor;
+
+          ul {
+            list-style: none;
+            padding-top: 0.7em;
+
+            li {
+                display: inline-block;
+                margin-right: 5em;
+				font-size: 1.2em;
+
+                a {
+					color: #fff;
+					vertical-align: middle;
+					text-decoration: none;
+
+					&:hover { text-decoration: underline; }
+				}
+
+            }
+        }
+      }
+
+    }
+}
