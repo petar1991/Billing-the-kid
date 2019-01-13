@@ -150,6 +150,49 @@ section {
 
         a:hover + .info{
             display: block;
+            cursor: pointer;
+        }
+
+        
+    }
+
+    .kontejner2 {
+        width: 50%;
+        margin: auto;
+        height: 10em;
+    
+        @include clearfix;
+        
+        a, .info {
+            padding: 1em 2em;   
+        }
+
+        .info {
+            display: none;
+            margin-top: 2em;
+            float: right;
+            text-align: left;
+            h2 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            p {
+                color: $red;
+            }
+        }
+
+        a {
+            float: right;
+            height: 100%;
+            .image {
+                border-radius: 50%;
+                height: 100%;
+            }
+        }
+
+        a:hover + .info{
+            display: block;
+            cursor: pointer;
         }
 
         
