@@ -4,6 +4,7 @@
 @include main;
 
 main {
+    position: relative;
     height: 100vh;
     background-size: cover;
     background-image: url('../slike/intro.jpg');
@@ -59,3 +60,54 @@ main {
 
     }
 }
+
+section {
+    width: 100%;
+   margin: auto;
+
+    @include clearfix;
+}
+
+.uvod {
+   
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    
+
+    h1, h2, h3 {
+        font-weight: normal;
+        background: rgba(55, 66, 73, 0.6);
+        vertical-align: baseline;
+    }
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+.button {
+    margin: 1em 2em;
+    padding: 1em 2em;
+    border-radius: 60px;
+    border: 1px solid $hoverColor;
+    cursor: pointer;
+
+    &:hover {
+        background: $hoverColor;
+        color: white;
+    }
+}
+
+.filter {
+    text-align: right;
+}
+    
