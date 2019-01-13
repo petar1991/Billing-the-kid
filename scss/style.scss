@@ -98,6 +98,8 @@ section {
     margin: 1em 2em;
     padding: 1em 2em;
     border-radius: 60px;
+    background-color: #fff;
+    color: $hedlineColor;
     border: 1px solid $hoverColor;
     cursor: pointer;
 
@@ -110,4 +112,72 @@ section {
 .filter {
     text-align: right;
 }
+
+.icon {
+    .kontejner {
+        width: 50%;
+        margin: auto;
+        height: 10em;
+    
+        @include clearfix;
+        
+        a, .info {
+            padding: 1em 2em;   
+        }
+
+        .info {
+            display: none;
+            margin-top: 2em;
+            float: left;
+            text-align: left;
+            h2 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            p {
+                color: $red;
+            }
+        }
+
+        a {
+            float: left;
+            height: 100%;
+            .image {
+                border-radius: 50%;
+                height: 100%;
+            }
+        }
+
+        a:hover + .info{
+            display: block;
+        }
+
+        
+    }
+}
+
+
+
+/*.lokacija {
+    padding: 1em 2em;
+    height: 100%;
+    width: 20%;
+    float: left;
+    background: $red;
+    text-decoration: underline;
+
+    img {
+        height: 100%;
+        float: left;
+    }
+
+    span {
+        font-size: 1.5em;
+        float: left;
+        margin-top: 0.3em;
+        text-decoration: underline;
+    }
+}  */
+
+
     
