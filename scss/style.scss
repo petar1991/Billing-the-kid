@@ -63,8 +63,7 @@ main {
 
 section {
     width: 100%;
-   margin: auto;
-
+    margin: auto;
     @include clearfix;
 }
 
@@ -95,7 +94,8 @@ section {
 }
 
 .button {
-    margin: 1em 2em;
+    
+    margin: 3em 2em;
     padding: 1em 2em;
     border-radius: 60px;
     background-color: #fff;
@@ -114,6 +114,7 @@ section {
 }
 
 .icon {
+    background-color: $sectionColor;
     .kontejner {
         width: 50%;
         margin: auto;
@@ -199,7 +200,118 @@ section {
     }
 }
 
+.kontakt, .pricing {
+    h1 {
+        font-size: 2em;
+		color: $fonrColor;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 1.5em;
+    }
 
+    
+}
+
+.pricing {
+    padding: 2.5em 16%;
+    color: $fonrColor;
+    text-align: center;
+    
+    
+    .pricingTable {
+        width: 60%;
+        border-collapse: collapse;
+        margin: 2.5em auto;
+
+        th, td {
+            padding: 0.2em;
+        }
+
+        .orange {
+            background-color: $red;
+            color: white;
+        }
+
+        .darkCol {
+            background-color: $hfColor;
+            color: white;
+            font-weight: bold;
+        }
+
+        thead {
+			.darkCol {
+				border-right: 1px solid $hfColor;
+			}
+		}
+
+		tbody {
+			td {
+				border: 1px solid $hfColor;
+			}
+		}
+    }
+}
+
+.pricingButton { display: none; }
+
+.kontakt {
+    padding: 2.5em 16%;
+    background-color: $sectionColor;
+
+    .map {
+        float: left;
+        width: 40%;
+        padding: 1em;
+
+        iframe {
+            width: 100%;
+        }
+    }
+    
+    form{ 
+        width: 50%;
+		margin: 1em;
+		float: right;
+        padding: 1em;
+        background-color: $red;
+
+        .contactInput {
+            float: left;
+			padding: .5em;
+			color: $hfColor;
+			border: none;
+			margin: 1em;
+        }
+    }
+
+    select {
+        width: 20%;
+        padding: 10em;
+    }
+
+    .contactInput[type="text"] {
+        float: right;
+        width: 70%;
+    }
+
+    .contactInput[type="email"] {
+        width: 96%;
+    }
+
+    textarea.contactInput {
+        width: 96%;
+    }
+}
+
+footer {
+    background-color: $hfColor;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    span {
+        color: $red;
+    }
+}
 
 /*.lokacija {
     padding: 1em 2em;
